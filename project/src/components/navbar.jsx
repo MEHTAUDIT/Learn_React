@@ -1,10 +1,11 @@
-function Navbar()
+function Navbar(props)
 {
   return (
+    <div>
+      <p>{props.isloggedin ? "welcome":"Please login"}</p>
+    </div>
 
-      <h1>Navbar</h1>
-
-  )
+  );
 
 }
 
