@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,7 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 a {
   font-weight: 500;
@@ -25,9 +25,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
+  /* place-items:center; */
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 
 h1 {
@@ -65,4 +65,23 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.navbar
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background-color: red;
+  box-shadow: 0 0 10px purple;
+}
+
+.nav-item
+{
+  display: flex;
+  gap: 5em;
+  align-items: center;
+  margin: auto;
+  
 }
