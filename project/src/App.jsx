@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Navbar  isloggedin={isloggedin}/>
-      <h1>hiii</h1>
+      {/* <h1>hiii</h1> */}
     </div>
   )
 }
