@@ -1,0 +1,36 @@
+body {
+    /* margin: 0; */
+    /* place-items:center; */
+    background-color: lightblue;
+  }
+  
+
+.navbar
+{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item
+{
+  display: flex;
+}
+
+.nav-link
+{
+  display: flex;
+  align-items: center;
+  color: red;
+  padding: 10px;
+  margin: 10px;
+}
+
+.nav-link:hover
+{
+  cursor: pointer;
+  color: blue;
+  background-color: white;
+  border-radius: 40%;
+}
