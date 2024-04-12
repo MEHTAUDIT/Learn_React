@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import AppContext from './store/app-context';
+import Login from './components/login';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // const ctx = useContext(AppContext);
+  const [isLoggedin, setIsLoggedin] = useState(false);
+
+  function handlelogin() {
+    setIsLoggedin(true);
+  }
+
+  return <AppContext.Provider value={{isLoggedin:isLoggedin,handlelogin:handlelogin}}>
+    <h1>Hello Context</h1>
+    <Login />
+  </AppContext.Provider>;
 }
 
 export default App;
